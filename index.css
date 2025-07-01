@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Green accent color */
+:root {
+    --green: #5f9341;
+}
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    box-sizing: border-box;
+    border: 1px solid var(--green);
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    border-color: #4c7d34;
+    box-shadow: 0 0 5px rgba(95, 147, 65, 0.4);
+}
+
+button {
+    background-color: var(--green);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #4c7d34;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(95, 147, 65, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
