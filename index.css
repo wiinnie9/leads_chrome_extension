@@ -8,91 +8,91 @@
 
 body {
     margin: 0;
-    padding: 40px 20px;
+    padding: 15px 10px;  /* reduced padding for smaller space */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--background);
     color: var(--text);
-    line-height: 1.6;
-    min-width: 400px;
+    line-height: 1.4;  /* slightly tighter line spacing */
+    min-width: 280px;  /* ensure small content fits */
+    font-size: 14px;  /* smaller font size */
 }
-
 
 /* Input styling */
 input {
     width: 100%;
-    padding: 14px 16px;
+    padding: 8px 10px;  /* smaller padding */
     border: 1px solid var(--green);
-    border-radius: 10px;
+    border-radius: 8px;  /* reduced border radius */
     outline: none;
-    font-size: 16px;
+    font-size: 14px;  /* smaller font size */
     transition: all 0.3s ease;
     background-color: #fff;
 }
 
 input:focus {
     border-color: var(--green-dark);
-    box-shadow: 0 0 8px rgba(95, 147, 65, 0.3);
+    box-shadow: 0 0 6px rgba(95, 147, 65, 0.3);
 }
 
 /* Button styling */
 button {
     background-color: var(--green);
     color: white;
-    padding: 14px 28px;
+    padding: 10px 20px;  /* smaller padding */
     border: none;
-    border-radius: 10px;
-    font-size: 16px;
+    border-radius: 8px;  /* reduced border radius */
+    font-size: 14px;  /* smaller font size */
     font-weight: 600;
     cursor: pointer;
-    margin-top: 15px;
+    margin-top: 12px;  /* smaller margin */
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 #delete-btn {
     background-color: var(--white);
     color: green;
-    padding: 14px 28px;
-    border: 1px solid green; /* ✅ define width, style, and color */
-    border-radius: 10px;
-    font-size: 16px;
+    padding: 10px 20px;  /* smaller padding */
+    border: 1px solid green;
+    border-radius: 8px;  /* reduced border radius */
+    font-size: 14px;  /* smaller font size */
     font-weight: 600;
     cursor: pointer;
-    margin-top: 15px;
+    margin-top: 12px;  /* smaller margin */
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-button:hover {
+button:hover, #delete-btn:hover {
     background-color: var(--green-dark);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 14px rgba(95, 147, 65, 0.3);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(95, 147, 65, 0.3);
 }
 
-button:active {
+button:active, #delete-btn:active {
     transform: translateY(0);
     box-shadow: none;
 }
 
 /* List styling */
 ul {
-    margin-top: 25px;
-    padding-left: 20px; /* add left padding for bullet spacing */
-    list-style: disc;   /* show bullet points */
+    margin-top: 15px;  /* smaller margin */
+    padding-left: 15px;  /* more compact bullet spacing */
+    list-style: disc;
 }
 
 li {
-    margin-top: 8px;
-    font-size: 16px;
+    margin-top: 6px;  /* smaller spacing between list items */
+    font-size: 14px;  /* smaller font size */
     color: var(--text);
 }
 
-
 li:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
 }
 
 /* Link styling */
 a {
     color: var(--green);
+    font-size: 14px;  /* smaller font size */
     text-decoration: none;
     transition: color 0.3s ease;
 }
